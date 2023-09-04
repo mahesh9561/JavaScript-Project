@@ -43,6 +43,18 @@ button.delete:hover {
     background-color: #ff0000;
 }
 
+button.update {
+    background-color: #3b72ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.update:hover {
+    background-color: #0022ff;
+}
+
 .completed {
     text-decoration: line-through;
     color: #999;

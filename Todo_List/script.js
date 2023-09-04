@@ -12,6 +12,7 @@ addTask.addEventListener('click',function(){
         // taskListEvent.textContent = addtaskInput;
         taskListEvent.innerHTML = `
             <span>${addtaskInput}</span>
+            <button class="update">Update</button>
             <button class="delete">Delete</button>
         `;
         
@@ -19,9 +20,20 @@ addTask.addEventListener('click',function(){
         console.log(taskListEvent)
         taskList.appendChild(taskListEvent);
         const deleteElement = taskListEvent.querySelector('button.delete');
+        const updateElement = taskListEvent.querySelector('button.update');
         deleteElement.addEventListener('click',function(){
             taskListEvent.remove();
         });
+
+        
+        // Update Task
+        updateElement.addEventListener('click', function () {
+            const updatedTaskInput = prompt("Update the task:", addtaskInput);
+            if (updatedTaskInput !== null) {
+                taskListEvent.querySelector('span').textContent = updatedTaskInput;
+            }
+        });
+
         taskInput.value = '';
     }
 })
