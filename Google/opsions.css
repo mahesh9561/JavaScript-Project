@@ -1,0 +1,80 @@
+.form {
+  display: flex;
+  /* border: 2px solid red; */
+  padding: 29px;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.input {
+  padding: 5px;
+  min-width: 100px;
+}
+.input:focus {
+  outline: none;
+}
+
+input:checked + label {
+  background-color: #edf2fa;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="color"] {
+  width: 0;
+  height: 0;
+  border: none;
+  visibility: hidden;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Input box */
+#cell-state {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 20px;
+  padding: 10px 100px;
+  align-items: center;
+}
+#cell-state div {
+  background-color: #edf2fa;
+  padding: 10px;
+}
+#cell-state input {
+  flex-grow: 1;
+  padding: 10px;
+}
+#cell-state input:focus {
+  outline: none;
+}
+
+/* Fonts Family */
+@font-face {
+  font-family: poppins-extra-bold;
+  src: url(./font/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: poppins-Bold-italic;
+  src: url(./font/Poppins-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: poppins-medium-font;
+  src: url(./font/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: poppins-regular;
+  src: url(./font/Poppins-Regular.ttf);
+}
